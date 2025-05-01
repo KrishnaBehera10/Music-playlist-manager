@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Playlist</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stye.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="music_manager">
+        <h1>
+          <span class="music_icon"><i class="ri-music-fill"></i></span> Music
+          Playlist Manager
+        </h1>
+        <div class="input">
+          <input type="text" placeholder="Song Title" class="song" />
+          <input type="text" placeholder="Duration" class="duration" />
+          <input type="text" placeholder="Artist" class="artist" />
+          <input type="text" placeholder="Genre" class="genre" />
+          <input type="text" placeholder="Album" class="album" />
+          <input type="submit" class="add" value="add Song" />
+        </div>
+      </section>
+      <section class="Playlist">
+        <h1>Playlist</h1>
+        <p class="empty">
+          Your playlist is empty. Add some songs to get started!
+        </p>
+        <ul class="list"></ul>
+      </section>
+    </main>
+  </body>
+</html>

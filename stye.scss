@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+main {
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: auto;
+
+  .music_manager {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .music_icon {
+      color: purple;
+    }
+    h1 {
+      font-weight: 500;
+    }
+    .input {
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      gap: 15px;
+      border: 1px solid rgba(128, 128, 128, 0.312);
+      padding: 20px 15px;
+      border-radius: 6px;
+      box-shadow: 0px 0px 4px 0px rgba(128, 128, 128, 0.332);
+
+      input {
+        padding: 10px;
+        border: 1px solid rgba(128, 128, 128, 0.318);
+        border-radius: 6px;
+      }
+
+      .add {
+        background-color: purple;
+        font-size: 1rem;
+        color: white;
+        text-transform: capitalize;
+        cursor: pointer;
+      }
+    }
+  }
+  .Playlist {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    h1 {
+      font-weight: 500;
+    }
+
+    .empty {
+      text-align: center;
+      font-size: 12px;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      li {
+        list-style: none;
+        border: 1px solid rgba(128, 128, 128, 0.281);
+        border-radius: 6px;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 14px;
+      }
+      .li_list {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
+        .genre {
+          border: 1px solid gray;
+          padding: 2px 3px;
+          border-radius: 10px;
+          font-size: 8px;
+          box-shadow: -2px 1px 3px 0px rgba(128, 128, 128, 0.688);
+          font-weight: 600;
+        }
+      }
+      .remove {
+        padding: 6px 10px;
+        border: none;
+        border-radius: 2px;
+        text-transform: capitalize;
+        cursor: pointer;
+      }
+      .remove:hover {
+        background-color: purple;
+        color: white;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  main {
+    .music_manager {
+      h1 {
+        font-size: 2rem;
+      }
+      .input {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, fr);
+      }
+    }
+    .Playlist {
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    width: 70%;
+  }
+}
